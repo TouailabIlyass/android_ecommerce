@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Allproduits"
+            android:icon="@drawable/produit"
+            android:title="Tous les produits" />
+        <item
+            android:id="@+id/nav_vetements"
+            android:icon="@drawable/clothes"
+            android:title="Vetements" />
+        <item
+            android:id="@+id/nav_sous_vetements"
+            android:icon="@drawable/trousers"
+            android:title="Sous Vetements" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search"
+            android:title="Search"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/nav_sourie"
+            android:icon="@drawable/mouse"
+            android:title="Sourie" />
+        <item
+            android:id="@+id/nav_achatsenligne"
+            android:icon="@drawable/shoppingcart"
+            android:title="Shooping" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_cmd"
+                android:icon="@drawable/command"
+                android:title="Mes Commandes"
+                />
+            <item
+                android:id="@+id/nav_panier"
+                android:icon="@drawable/onlineshopping"
+                android:title="Panier" />
+            <item
+                android:id="@+id/nav_deconnection"
+                android:icon="@drawable/logout"
+                android:title="Deconnection" />
+
+        </menu>
+    </item>
+
+</menu>

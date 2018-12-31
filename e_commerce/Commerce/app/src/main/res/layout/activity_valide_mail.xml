@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="100dp"
+    tools:context=".Models.ValideMailActivity">
+
+    <TextView
+        android:padding="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous devez valider votre mail"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/txtvalidecode"
+        android:padding="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="----"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+        <Button
+            android:id="@+id/btnvalideenvoyer"
+            android:padding="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoyer"
+            />
+            <Button
+                android:id="@+id/btnvalideexit"
+                android:padding="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exit"/>
+    <TextView
+        android:id="@+id/txtvalidestatus"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="code incorrect !!"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:visibility="invisible"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanierFragment"
+    android:background="#330000"
+    >
+    <TextView
+        android:id="@+id/txtpanier_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panier Vide"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycle_viewPanier"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@android:color/darker_gray" />
+
+   </ScrollView>
+
+    <Button
+        android:id="@+id/panier_acheter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter au Carte"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:background="#ff471a"
+        android:layout_marginBottom="10dp"
+    />
+
+</RelativeLayout>
